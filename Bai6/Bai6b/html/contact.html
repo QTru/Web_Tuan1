@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <style>
+        div {
+            padding: 0;
+            margin: 0 auto;
+            width: 50%;
+        }
+
+        body {
+            font-size: large;
+        }
+
+        .table1>tbody>tr>td:first-child {
+            width: 82px;
+        }
+
+        .table2>tbody>tr>td:first-child {
+            width: 190px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Contact Us</h1>
+
+        <form>
+            <!-- Section 1 -->
+            <fieldset>
+                <legend>Your message:</legend>
+
+                <table class="table1">
+                    <tr>
+                        <td>
+                            <label for="to">To</label>
+                        </td>
+
+                        <td>
+                            <input type="text" id="to" name="to" style="width: 210px">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="email">Your email</label>
+                        </td>
+
+                        <td>
+                            <input type="text" id="email" name="email" style="width: 210px">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="message">Message</label>
+                        </td>
+
+                        <td>
+                            <textarea id="message" name="message" rows="10" cols="60"></textarea>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="file">Attach File</label>
+                        </td>
+
+                        <td>
+                            <input type="file" id="file" name="file">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+
+            <!-- Section 2 -->
+            <fieldset>
+                <legend>How you found us:</legend>
+
+                <table class="table2">
+                    <tr>
+                        <td>
+                            <label for="hear">How did you hear from us</label>
+                        </td>
+
+                        <td>
+                            <select id="hear" name="hear">
+                                <option value="google">Google</option>
+                                <option value="friend">Friend</option>
+                                <option value="advert">Advertisement</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label for="newsletter">Newsletter</label>
+                        </td>
+
+                        <td>
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            Ensure this box is checked if you would like to receive email updates
+                    </tr>
+                </table>
+            </fieldset>
+
+            <!-- Send message -->
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+</body>
+
+</html>
